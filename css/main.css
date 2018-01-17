@@ -1,0 +1,10 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+/* cambio de valor del carousel */
+.whChange{
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+}
