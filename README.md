@@ -1,4 +1,4 @@
-# Hackaton
+# Sci-Files // Proyecto Hackaton
 ___
 ## Día 1: Planificación e investigación
 
