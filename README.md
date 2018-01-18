@@ -3,7 +3,7 @@ ___
 ## Día 1: Planificación e investigación
 
 * Planificación del proyecto: Dentro del tema en si sobre la información de videos, ¿A que publico del mundo del cine queremos ir?
-Por el momento se tiene planeado ir por la tematica de las peliculas de heroes y villanos. Especialmente del mundo de DC y Marvel.
+Por el momento se tiene planeado ir por la tematica de las peliculas de heroes y villanos. Especialmente del mundo de DC y Marvel. holi
 
 * Cosas a utilizar: 
 	1. Framework: Bootstrap 4
