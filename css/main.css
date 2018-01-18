@@ -29,7 +29,12 @@ body {
     margin-left: 25%;
     margin-bottom: 10px;
 }
-
+.movie-title{
+    margin-top: 30px;
+}
+.container-results{
+    background-color: rgba(218, 216, 216, 0.37);
+}
 @media only screen and (min-width:1200px){
     .whChange {
     width: 100%;
