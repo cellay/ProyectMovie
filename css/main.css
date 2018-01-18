@@ -1,20 +1,19 @@
 body {
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto', sans-serif;
-    
 }
 /* cambio de valor del carousel */
 .whChange {
     width: 90%;
-    height: 30vh;
+    height: 40vh;
 }
 .sectionCarousel{
     background-color: black;
+    height: 40vh;
 }
 .containerMovie {
     padding: 5px;
     color: black;
-    background-color: 
     float: left;
     width: 20%;
     height: auto;
@@ -31,19 +30,15 @@ body {
     margin-bottom: 10px;
 }
 /* clase para esconder en modo desktop */
-    .hidenDesktop {
-        display: none;
-    }
+
 .sectionInformation {
-    margin-top: 35%;
-    background-image: url(../../../assets/images/Tropa.jpg);
+    background-image: url(../../../assets/images/tropa.jpg);
     background-size: cover;
     width: 50%;
     height: 50vh;
 }
 .sectionText {
     color: black;
-    margin-top: 35%;
     background-color: orange;
     font-family: 'Oswald', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -53,11 +48,46 @@ body {
 .fontHeight {
     font-size: 40px;
 }
+.highlights{
+    font-size: 30px;
+}
+/* clase de mostrar peliculas */
+.containerMovie {
+    /* contenedor principal de la pelicula*/
+    margin-top: 30vh;
+    background-color: lightgray;
+    padding: 5px;
+     color: black;
+     float: left;
+     width: 20%;
+     height: auto;
+     border-radius: 10px;
+     box-shadow: 1px 1px 2px gray;
+ }
+ .imgStyle {
+     /* estilo de la imagen de portada */
+     border-radius: 10px;
+     width: 90%;
+     margin: 10px;
+ }
+ #btnSeemore { 
+     /* boton para ver mas */
+     margin-left: 25%;
+     margin-bottom: 10px;
+ }
+.hidenNow {
+    /* esconder */
+    display: none;
+}
+.showNow {
+    /* mostrar */
+    display: block;
+}
 @media only screen and (min-width:1200px){
     .whChange {
     width: 100%;
-    height: 40vh;
-}
+    height: 50vh;
+    }
     #btnSeemore{
         margin-left: 30%;
     }
