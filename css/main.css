@@ -31,9 +31,40 @@ body {
 }
 .movie-title{
     margin-top: 30px;
+    /* outline:1px solid red; */
 }
 .container-results{
     background-color: rgba(218, 216, 216, 0.37);
+}
+
+.container-imag{
+    padding: 5px;
+    float: left;
+    width: 20%;
+    height: auto;
+}
+.movie-plot{
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 2px gray;
+} 
+.review h1{
+    letter-spacing: 2px;
+}
+.plot{
+   margin:20px 0;  
+}
+.plot .icons:last-child{
+ margin-left:25px;
+}
+.icons i, .plot span:nth-child(2){
+    font-size: 24px;
+}
+.columns{
+    margin-top: 40px;
+    column-count: 3;
+    column-width: 200px;
 }
 @media only screen and (min-width:1200px){
     .whChange {
@@ -43,4 +74,8 @@ body {
     #btnSeemore{
         margin-left: 30%;
     }
+    .review{
+        padding-left: 14px;
+        margin-left:35%;   
+    }   
 }
