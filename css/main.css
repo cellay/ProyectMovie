@@ -4,8 +4,12 @@ body {
 }
 /* cambio de valor del carousel */
 .whChange {
-    width: 100%;
-    height: 30vh;
+    width: 90%;
+    height: 40vh;
+}
+.sectionCarousel{
+    background-color: black;
+    height: 40vh;
 }
 .containerMovie {
     padding: 5px;
@@ -25,19 +29,63 @@ body {
     margin-left: 25%;
     margin-bottom: 10px;
 }
+/* clase para esconder en modo desktop */
 
-/* cambio de valor del carousel */
-.none {
+.sectionInformation {
+    width: 50%;
+    height: 50vh;
+}
+.sectionText {
+    color: black;
+    background-color: orange;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 10vh;
+    box-sizing: border-box;
+}
+.fontHeight {
+    font-size: 40px;
+}
+.highlights{
+    font-size: 30px;
+}
+/* clase de mostrar peliculas */
+.containerMovie {
+    /* contenedor principal de la pelicula*/
+    margin-top: 30vh;
+    background-color: lightgray;
+    padding: 5px;
+     color: black;
+     float: left;
+     width: 20%;
+     height: auto;
+     border-radius: 10px;
+     box-shadow: 1px 1px 2px gray;
+ }
+ .imgStyle {
+     /* estilo de la imagen de portada */
+     border-radius: 10px;
+     width: 90%;
+     margin: 10px;
+ }
+ #btnSeemore { 
+     /* boton para ver mas */
+     margin-left: 25%;
+     margin-bottom: 10px;
+ }
+.hidenNow {
+    /* esconder */
     display: none;
 }
-#user-profile {
-    background-image: url('../assets/images/user.svg');
+.showNow {
+    /* mostrar */
+    display: block;
 }
 @media only screen and (min-width:1200px){
     .whChange {
     width: 100%;
     height: 50vh;
-}
+    }
     #btnSeemore{
         margin-left: 30%;
     }
