@@ -184,6 +184,23 @@ a:hover {
     /* mostrar */
     display: block;
 }
+
+/* clases para iniciar sesión user */
+.bg-gradient {
+    height: 100vh;
+    background: #0C1B2F; /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom right, #0C1B2F, #39a2be); 
+    padding: 1rem 3rem;
+}
+
+#a-right {
+    display: none;
+}
+
+#isotipo {
+    width: 30%;
+}
+
 @media only screen and (min-width:1200px){
     .sectionCarousel{
     height: 100vh;
@@ -199,4 +216,10 @@ a:hover {
         padding-left: 14px;
         margin-left:35%;   
     }   
+    #isotipo {
+        width: 100%;
+    }   
+    #a-right {
+    display: block;
+    }  
 }
