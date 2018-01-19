@@ -3,10 +3,8 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
     if ($(window).scrollTop()) {
       $('#menu').addClass('blue');
-      $('.logo').attr('src','../assets/images/logo-white-01.png');
     } else {
       $('#menu').removeClass('blue');
-        $('.logo').attr('src','../assets/images/logo-01.png');
     }
   });
   // ---------> Imprime foto y datos usuario <-------------
@@ -38,11 +36,13 @@ $(document).ready(function() {
   $('#logout').click(function() {
     firebase.auth().signOut().then(function() {
       console.log('Cerrando sesión...');
-      $(location).attr('href','index.html');
+      $(location).attr('href', 'index.html');
     }).catch(function(error) {
       console.log(error);
     });
   });
+
+
   // Agregando funcionalidad a searchbar
   $('#searchBtn').on('click', (e) => {
 
@@ -54,13 +54,13 @@ $(document).ready(function() {
 });
 
 function getMovies(searchText) {
-  axios.get('http://www.omdbapi.com?s=' + searchText + '&apikey=3a181f1c')
+  axios.get('https://www.omdbapi.com?s=' + searchText + '&apikey=3a181f1c')
     .then((response) => {
       console.log(response);
       let movies = response.data.Search;
       let output = '';
       $.each(movies, (index, movie) => {
-        axios.get('http://www.omdbapi.com?t=' + movie.Title + '&apikey=3a181f1c')
+        axios.get('https://www.omdbapi.com?t=' + movie.Title + '&apikey=3a181f1c')
           .then((response) => {
             let movieS = response.data;
             console.log(movieS);
@@ -73,6 +73,7 @@ function getMovies(searchText) {
           <a href="#"  class="btn btn-outline-warning bg-dark" id="btnSeeMore" onclick="selectMovie('${movieS.Title}')">See More</a>
         </div>
       `; 
+
             }
             $('.hightLight').addClass('hidenNow');
             $('#moviesBox').html(output);
@@ -80,14 +81,16 @@ function getMovies(searchText) {
           .catch((err) => {
             console.log(err);
           });
-        });
-      })
+      });
+    })
     .catch((err) => {
       console.log(err);
     });
+
 }
 
 function selectMovie(title) {
   sessionStorage.setItem('movieTitle', title);
   window.location = 'views/movie.html';
 }
+
