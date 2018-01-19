@@ -245,6 +245,20 @@ a:hover {
     border-right: 2px solid white;
     border-bottom: 2px solid white;
 }
+.profile-header{
+    outline:1px solid red;
+    margin-top: 120px;
+}
+.container-profile-img{
+    width: 30%;
+}
+.image-user img{
+    width: 100px;
+}
+.details{
+    margin-left:18px;
+}
+
 @media only screen and (min-width:1200px){
     .sectionCarousel{
     height: 100vh;
