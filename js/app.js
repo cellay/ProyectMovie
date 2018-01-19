@@ -43,8 +43,6 @@ $(document).ready(function() {
       console.log(error);
     });
   });
-
-
   // Agregando funcionalidad a searchbar
   $('#searchBtn').on('click', (e) => {
 
@@ -74,7 +72,7 @@ function getMovies(searchText) {
           <h5 class="nameMovie text-center">${movieS.Title}</h5>
           <a href="#"  class="btn btn-outline-warning bg-dark" id="btnSeeMore" onclick="selectMovie('${movieS.Title}')">See More</a>
         </div>
-      `;
+      `; 
             }
             $('.hightLight').addClass('hidenNow');
             $('#moviesBox').html(output);
