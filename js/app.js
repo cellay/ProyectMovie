@@ -54,13 +54,13 @@ $(document).ready(function() {
 });
 
 function getMovies(searchText) {
-  axios.get('http://www.omdbapi.com?s=' + searchText + '&apikey=3a181f1c')
+  axios.get('https://www.omdbapi.com?s=' + searchText + '&apikey=3a181f1c')
     .then((response) => {
       console.log(response);
       let movies = response.data.Search;
       let output = '';
       $.each(movies, (index, movie) => {
-        axios.get('http://www.omdbapi.com?t=' + movie.Title + '&apikey=3a181f1c')
+        axios.get('https://www.omdbapi.com?t=' + movie.Title + '&apikey=3a181f1c')
           .then((response) => {
             let movieS = response.data;
             console.log(movieS);
