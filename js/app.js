@@ -3,10 +3,10 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
     if ($(window).scrollTop()) {
       $('#menu').addClass('blue');
-      $('.logo').attr('src','../assets/images/logo-white-01.png');
+      $('.logo').attr('src', '../assets/images/logo-white-01.png');
     } else {
       $('#menu').removeClass('blue');
-        $('.logo').attr('src','../assets/images/logo-01.png');
+      $('.logo').attr('src', '../assets/images/logo-01.png');
     }
   });
   // ---------> Imprime foto y datos usuario <-------------
@@ -38,19 +38,22 @@ $(document).ready(function() {
   $('#logout').click(function() {
     firebase.auth().signOut().then(function() {
       console.log('Cerrando sesión...');
-      $(location).attr('href','index.html');
+      $(location).attr('href', 'index.html');
     }).catch(function(error) {
       console.log(error);
     });
   });
+
+
   // Agregando funcionalidad a searchbar
   $('#searchBtn').on('click', (e) => {
 
     let searchText = $('#searchMovie').val();
-      $('#nameInputSearch').html('The results for <span class="bold"> ' + searchText + '</span> are... ');
+
     getMovies(searchText);
     e.preventDefault();
   });
+});
 
 function getMovies(searchText) {
   axios.get('http://www.omdbapi.com?s=' + searchText + '&apikey=3a181f1c')
@@ -66,12 +69,10 @@ function getMovies(searchText) {
             $genre = movieS.Genre.toString();
             selector = 'Sci-Fi';
             if ($genre.indexOf(selector) !== -1) {
-              output += `<div class="containerMovie m-3 d-flex flex-column justify-content-center align-items-center ">
-          <img src="${movieS.Poster}" alt="" class="imgStyle">
-          <h5 class="nameMovie text-center">${movieS.Title}
-        <a href="#"  class="text-white" id="btnSeeMore" onclick="infoMovie('${movieS.imdbID}')"><i class="fa fa-search-plus" aria-hidden="true" id="searchmore"></i></a>
-        </h5>  
-        </div>
+              output += `<div class="containerMovie m-3 d-flex flex-column justify-content-center align-items-center">
+         <img src="${movieS.Poster}" alt="" class="imgStyle">
+         <h5 class="nameMovie text-center text-uppercase">${movieS.Title} <a href="#"  class="text-light" id="btnSeeMore" onclick="infoMovie('${movieS.imdbID}')"><i class="fa fa-search-plus" aria-hidden="true"></i></a></h5>
+       </div>
      `;
             }
             $('.hightLight').addClass('hidenNow');
@@ -80,11 +81,9 @@ function getMovies(searchText) {
           .catch((err) => {
             console.log(err);
           });
-        });
-      })
+      });
+    })
     .catch((err) => {
       console.log(err);
     });
-    }
-});
-
+}

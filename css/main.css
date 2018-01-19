@@ -245,6 +245,31 @@ a:hover {
     border-right: 2px solid white;
     border-bottom: 2px solid white;
 }
+/* propiedades para el footer */
+.font {
+    font-family: 'Roboto',
+    sans-serif;
+}
+.socialMedia {
+    color: white;
+}
+.socialMedia > i {
+    margin: 10px;
+    font-size: 20px;
+    transition: 1s;
+    cursor: pointer;
+    margin-top: 20px;
+    float: right;
+}
+.socialMedia > i:hover {
+    transition: 1s;
+    color: #39a2be;
+}
+footer {
+    background-color: #0C1B2F;
+    box-sizing: border-box;
+}
+/* aca termina propiedades de footer*/
 .profile-header{
     outline:1px solid red;
     margin-top: 120px;
