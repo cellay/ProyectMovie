@@ -3,10 +3,8 @@ $(document).ready(function() {
   $(window).on('scroll', function() {
     if ($(window).scrollTop()) {
       $('#menu').addClass('blue');
-      $('.logo').attr('src', '../assets/images/logo-white-01.png');
     } else {
       $('#menu').removeClass('blue');
-      $('.logo').attr('src', '../assets/images/logo-01.png');
     }
   });
   // ---------> Imprime foto y datos usuario <-------------
