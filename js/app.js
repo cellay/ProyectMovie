@@ -43,8 +43,6 @@ $(document).ready(function() {
       console.log(error);
     });
   });
-
-
   // Agregando funcionalidad a searchbar
   $('#searchBtn').on('click', (e) => {
 
@@ -74,7 +72,7 @@ function getMovies(searchText) {
           <h5 class="nameMovie text-center">${movieS.Title}</h5>
           <a href="#"  class="btn btn-outline-warning bg-dark" id="btnSeeMore" onclick="infoMovie('${movieS.imdbID}')">See More</a>
         </div>
-      `;
+     /*  `; */
             }
             $('.hightLight').addClass('hidenNow');
             $('#moviesBox').html(output);
@@ -88,3 +86,5 @@ function getMovies(searchText) {
       console.log(err);
     });
 }
+});
+
