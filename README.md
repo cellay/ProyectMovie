@@ -32,3 +32,9 @@ Por el momento se tiene planeado ir por la tematica de las peliculas de heroes y
 
 ![PlaneamientoFinal](assets/documents/Docimg4.jpg)
 
+
+## Día 3: Avanzando el maquetado y funcionalidad
+
+* Avanzando con el maquetado principal y las views, funcionalidad de filtrado solo por el tema al que nos enfocamos.
+
+* Validación de usuario por Google y registro de correo y contraseña dentro de firebase. Y poder obtener data de este.

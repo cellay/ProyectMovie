@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../vendors/bootstrap 4/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/fonts/font-awesome/css/font-awesome.min.css">
+  <title>Sci-Files register</title>
+</head>
+
+<body>
+  <div class="row vh45">
+    <div class="login">
+      <h1 class="text-center">Registrate</h1>
+      <hr class="line">
+    </div>
+    <form class="form-horizontal" role="form">
+      <div class="form-group ">
+        <label for="inputName" class="control-label">Nombre y Apellido</label>
+        <div class="col-sm-12 col-sx-12">
+          <input type="text" class="form-control" id="name" placeholder="Ingresa nombre y apellido">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputEmail3" class="control-label">Email</label>
+        <div class="col-sm-12 col-sx-12">
+          <input type="email" class="form-control" autocomplete="off" id="email" placeholder="Correo Electrónico">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="control-label">Contraseña</label>
+        <div class="col-sm-12 col-sx-12">
+          <input type="password" class="form-control none" id="password" placeholder="Contraseña">
+        </div>
+        <span id="error">Su contraseña debe tener como mínimo 6 caracteres</span>
+      </div>
+      <div class="form-group">
+        <label for="inputPassword3" class="control-label">Confirmar Contraseña</label>
+        <div class="col-sm-12 col-sx-12">
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Confirmar Contraseña">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10 btnSignIn flex-item">
+          <a href="#" class="btn btnStyle vh45" id="btnRegister">Registrate</a>
+          <p class="text-center">¿Ya tienes una cuenta?
+            <a href="user.html">¡Ingresa!</a>
+          </p>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script type="text/javascript" src="../vendors/jQuery/jquery-3.2.1.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+  <script type="text/javascript" src="../vendors/bootstrap 4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../js/sign.js"></script>
+  <script type="text/javascript" src="../js/signup1.js"></script>
+</body>
+
+</html>
