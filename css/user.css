@@ -1,0 +1,60 @@
+.flex {
+    display: flex;
+    justify-content: center;
+}
+.border-login {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 1px 1px 3px rgb(92, 84, 84); 
+}
+.arrow-icon {
+    font-size: 3rem;
+    color: white;
+}
+.login-google {
+    width: 20%;
+} 
+#btnSignIn {
+    padding: 0.5rem 2rem;
+    border: 2px solid #39a2be;
+    color: #39a2be;
+    transition: 1s;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+#btnSignIn:hover {
+    background: linear-gradient(to bottom right, #247d94, #39a2be);
+    color: white;
+}
+.title-form {
+    color: rgb(27, 53, 87);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+#inputEmail, #inputPassword {
+    border: 2px solid #39a2be;
+}
+.hr-login {
+    border: .5px solid #39a2be;
+} 
+.count {
+    margin: 0;
+}
+.hr-form {
+    border: 5px solid #39a2be;
+}
+#name, #email, #password, #confirmPassword {
+    border: 2px solid #39a2be;
+}
+#error {
+    padding: .5rem;
+    background: linear-gradient(to bottom right, #247d94, #39a2be);
+    color: white;
+    width: 100%;
+    font-size: 1rem;
+    font-size: .7rem;
+}
+#password {
+    margin-bottom: 1rem;
+}

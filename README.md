@@ -35,6 +35,12 @@ Por el momento se tiene planeado ir por la tematica de las peliculas de heroes y
 
 ## Día 3: Avanzando el maquetado y funcionalidad
 
-* Avanzando con el maquetado principal y las views, funcionalidad de filtrado solo por el tema al que nos enfocamos.
+* Avanzando con el maquetado principal y las views, funcionalidad de filtrado por Sci-Fi.
 
-* Validación de usuario por Google y registro de correo y contraseña dentro de firebase. Y poder obtener data de este.
+* Validación de usuario por Google, registro de correo y contraseña dentro de firebase.
+
+## Día 4: Preparación, entrega y exposición
+
+
+
+

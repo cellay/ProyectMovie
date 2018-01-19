@@ -13,6 +13,10 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+.nameInsert {
+    color: white;
+    margin: 5px;
+}
 #register {
     color: #39a2be;
     display: flex;
@@ -55,20 +59,7 @@ header {
     background-color:#0C1B2F;
     height: 40vh;
 }
-.containerMovie {
-    padding: 5px;
-    color: black;
-    float: left;
-    width: 20%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 1px 1px 2px gray;
-}
-.imgStyle {
-    border-radius: 10px;
-    width: 90%;
-    margin: 10px;
-}
+
 #btnSeemore {
     margin-left: 25%;
     margin-bottom: 10px;
@@ -81,7 +72,7 @@ header {
     background-color: rgba(218, 216, 216, 0.37);
 }
 
-.container-imag{
+.container-image{
     padding: 5px;
     float: left;
     width: 20%;
@@ -96,7 +87,7 @@ header {
 .review h1{
     letter-spacing: 2px;
 }
-.plot{
+.plot {
    margin:20px 0;  
 }
 .plot .icons:last-child{
@@ -118,7 +109,6 @@ a:hover {
 }
 .bgNav {
     background-color: #0C1B2F;
-    color: aqua;
     font-family: 'Roboto', sans-serif;
 }
 /* clase para esconder en modo desktop */
@@ -126,56 +116,85 @@ a:hover {
     text-align: center;
     display: inline-block;
 }
-.sectionInformation {
-    background-image: url('../assets/images/Tropa.jpg');
-    background-size: cover;
-    width: 100%;
-    height: 50vh;
-}
+
 .outColor {
     filter: blur(1px);
     border: double 0.5px white;
     box-shadow: 1px 1px 5px 4px #39a2be;
-}
-.sectionText {
-    color: white;;
-    background-color: #0C1B2F;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    padding: 10vh;
-    box-sizing: border-box;
 }
 .fontHeight {
     font-size: 40px;
 }
 .highlights{
     font-size: 30px;
-    height: 50vh;
+    height: 40vh;
 }
 /* clase de mostrar peliculas */
 .containerMovie {
     /* contenedor principal de la pelicula*/
-    margin-top: 30vh;
-    background-color: lightgray;
-    padding: 5px;
-     color: black;
      float: left;
+     margin-top: 20vh;
+     padding: 5px;
+     color: black;
      width: 20%;
-     height: auto;
+     height: 50vh;
      border-radius: 10px;
-     box-shadow: 1px 1px 2px gray;
+ }
+.containerMovie2 {
+    /* contenedor principal de la pelicula*/
+     float: left;
+     padding: 5px;
+     color: black;
+     width: 20%;
+     height: 40vh;
+     border-radius: 10px;
  }
  .imgStyle {
      /* estilo de la imagen de portada */
-     border-radius: 10px;
-     width: 90%;
-     margin: 10px;
+     border-radius: 5px 5px 0px 0px;
+     width: 100%;
+     height: 40vh;
+     margin: 10px 10px 0px 10px;
  }
+#searchmore {
+    margin-left: 10px;
+}
+.imgStyle2 {
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+    height: 30vh;
+    margin: 10px 10px 0px 10px;
+    box-shadow: 2px -1px 1px 0px gray;
+}
  #btnSeemore { 
      /* boton para ver mas */
-     margin-left: 25%;
-     margin-bottom: 10px;
+     flex:auto;
  }
+.bold {
+    display: inline-block;
+    color: #39a2be;
+}
+#nameInputSearch {
+    margin-left: 10vh;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+#searchBtn {
+    border-color: #39a2be;
+    color: #39a2be;
+    border-radius: 0px 5px 5px 0px;
+}
+#searchMovie {
+    border: 1px solid #39a2be;
+    border-radius: 5px 0px 0px 5px;
+    font-family: 'Roboto', sans-serif;
+}
+#moviesBox {
+    width: 100%;
+    padding-left: 7%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
 .hidenNow {
     /* esconder */
     display: none !important;
@@ -184,6 +203,108 @@ a:hover {
     /* mostrar */
     display: block;
 }
+
+/* clases para iniciar sesión user */
+.bg-gradient {
+    height: 100vh;
+    background: #0C1B2F; /* For browsers that do not support gradients */
+    background: linear-gradient(to bottom right, #0C1B2F, #39a2be); 
+    padding: 1rem 3rem;
+}
+
+#a-right {
+    display: none;
+}
+
+#isotipo {
+    width: 30%;
+}
+
+#nextReleases {
+    width: 100%;
+    padding-left: 7%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.isoLogo {
+    width: 80px;
+}
+#mostPopular {
+    width: 100%;
+    padding-left: 7%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    background: #0C1B2F; /* For browsers that do not support gradients */
+    background: linear-gradient(#39a2be ,#0C1B2F);
+}
+.titleClass {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-left: 5vh;
+}
+.nameMovie {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    background-color: #39a2be;
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+    border-left: 2px solid #39a2be;
+    border-right: 2px solid #39a2be;
+    border-bottom: 2px solid #39a2be;
+}
+.nameMovie2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-radius: 0px 0px 5px 5px;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+/* propiedades para el footer */
+.font {
+    font-family: 'Roboto',
+    sans-serif;
+}
+.socialMedia {
+    color: white;
+}
+.socialMedia > i {
+    margin: 10px;
+    font-size: 20px;
+    transition: 1s;
+    cursor: pointer;
+    margin-top: 20px;
+    float: right;
+}
+.socialMedia > i:hover {
+    transition: 1s;
+    color: #39a2be;
+}
+footer {
+    background-color: #0C1B2F;
+    box-sizing: border-box;
+}
+/* aca termina propiedades de footer*/
+.profile-header{
+    outline:1px solid red;
+    margin-top: 120px;
+}
+.container-profile-img{
+    width: 30%;
+}
+.image-user img{
+    width: 100px;
+}
+.details{
+    margin-left:18px;
+}
+
 @media only screen and (min-width:1200px){
     .sectionCarousel{
     height: 100vh;
@@ -195,8 +316,14 @@ a:hover {
     #btnSeemore{
         margin-left: 30%;
     }
-    .review{
+    .review {
         padding-left: 14px;
         margin-left:35%;   
     }   
+    #isotipo {
+        width: 100%;
+    }   
+    #a-right {
+    display: block;
+    }  
 }

@@ -72,7 +72,7 @@ function getMovies(searchText) {
               output += `<div class="containerMovie m-3 d-flex flex-column justify-content-center align-items-center ">
           <img src="${movieS.Poster}" alt="" class="imgStyle">
           <h5 class="nameMovie text-center">${movieS.Title}</h5>
-          <a href="#"  class="btn btn-outline-warning bg-dark" id="btnSeeMore" onclick="infoMovie('${movieS.imdbID}')">See More</a>
+          <a href="#"  class="btn btn-outline-warning bg-dark" id="btnSeeMore" onclick="selectMovie('${movieS.Title}')">See More</a>
         </div>
       `;
             }
@@ -87,4 +87,9 @@ function getMovies(searchText) {
     .catch((err) => {
       console.log(err);
     });
+}
+
+function selectMovie(title) {
+  sessionStorage.setItem('movieTitle', title);
+  window.location = 'views/movie.html';
 }

@@ -5,50 +5,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sci</title>
   <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/user.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="../vendors/bootstrap 4/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/fonts/font-awesome/css/font-awesome.min.css">
+  <title>Sci-files</title>
 </head>
 
 <body>
-  <div class="container">
-    <main class="container-fluid mainLogin">
-      <div class="row vh45">
-        <div class="login">
-          <h1 class="text-center">Iniciar Sesión</h1>
+    <main class="container-fluid bg-gradient flex">
+      <div class="row">
+        <div class="col-md-2 offset-md-2 align-self-center text-center">
+          <img id="isotipo" class="img-fluid" src="../assets/images/isotipo-white-01.png" alt="">
         </div>
-
-        <form class="form-horizontal" role="form">
-          <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-            <div class="col-sm-10">
-              <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico">
+        <div class="col-md-1 align-self-center arrow-icon">
+          <i  id="a-right" class="fa fa-arrow-right" aria-hidden="true"></i>
+        </div>
+        <div class="col-md-5  align-self-center border-login">
+            <div class="head-login">
+                <h2 class="text-center title-form">Log in</h2>
             </div>
-          </div>
-          <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">Contraseña</label>
-            <div class="col-sm-10">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+            <hr class="hr-form">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="inputEmail3" class=" control-label">Email</label>
+              <div class="">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico">
+              </div>
             </div>
-          </div>
-          <div class="form-group vh45">
-            <div class="col-sm-offset-2 col-sm-10">
-              <a href="#" class="btn btn-default" id="btnSignIn">Inicia Sesión</a>
-              <a href="#" class="btn btn-danger" id="btn-Google">Iniciar Sesión con Google</a>
+            <div class="form-group">
+              <label for="inputPassword3" class=" control-label">Contraseña</label>
+              <div class="">
+                <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+              </div>
             </div>
+            <div class="form-group">
+              <div class="text-right">
+                <a href="#" class="btn btn-default" id="btnSignIn">Inicia Sesión</a>
+              </div>
+              <hr class="hr-login">
+              <div class="text-center">
+                  <a href="#"><img class="login-google img-fluid" id="btn-Google" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google"></a>
+              </div>
+            </div>
+          </form>
+          <hr class="hr-login">
+          <div class="text-center">
+            <p class="count">¿No tienes una cuenta?
+              <a href="signup1.html">¡Regístrate!</a>
+            </p>
           </div>
-        </form>
-      </div>
-      <div class="flex between">
-        <p class="account">¿No tienes una cuenta?
-          <a href="signup1.html">¡Regístrate!</a>
-        </p>
+        </div>
       </div>
     </main>
-
-  </div>
   <script type="text/javascript" src="../vendors/jQuery/jquery-3.2.1.js"></script>
   <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
   <script type="text/javascript" src="../vendors/bootstrap 4/js/bootstrap.min.js"></script>

@@ -90,6 +90,7 @@ $(document).ready(function() {
         // The signed-in user info.
         var user = result.user;
         console.log(user);
+          debugger
         firebase.database().ref('user/' + user.uid).set({
           name: user.displayName,
           email: user.email,
