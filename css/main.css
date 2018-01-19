@@ -13,6 +13,10 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+.nameInsert {
+    color: white;
+    margin: 5px;
+}
 #register {
     color: #39a2be;
     display: flex;
