@@ -52,7 +52,7 @@ function infoMovie() {
     </div>
         `;
 
-      $('.movie-plot').html(output);
+      $('.movie-plot').html(output)
     })
     .catch((err) => {
       console.log(err);
