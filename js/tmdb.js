@@ -22,7 +22,6 @@ function mostPopular() {
         output += `<div class="containerMovie m-3 d-flex flex-column justify-content-center align-items-center ">
           <img src="https://image.tmdb.org/t/p/w500/${this.backdrop_path}" alt="" class="imgStyle" onclick="selectMovie('${this.title}')">
           <h5 class="nameMovie text-center">${this.title}</h5>')">
-          <h5 class="nameMovie text-center">${this.title}</h5>
         </div>
       `;
       };
