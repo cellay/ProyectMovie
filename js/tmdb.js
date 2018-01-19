@@ -18,9 +18,9 @@ function mostPopular() {
 
             $.each(movie, function () {
                 console.log(this);
-                output += `<div class="containerMovie m-3 d-flex flex-column justify-content-center align-items-center ">
-          <img src="https://image.tmdb.org/t/p/w500/${this.backdrop_path}" alt="" class="imgStyle">
-          <h5 class="nameMovie text-center">${this.title}</h5>
+                output += `<div class="containerMovie2 m-3 d-flex flex-column justify-content-center align-items-center ">
+          <img src="https://image.tmdb.org/t/p/w500/${this.backdrop_path}" alt="" class="imgStyle2">
+          <h5 class="nameMovie2 text-center text-uppercase">${this.title}</h5>
         </div>
       `;
             })
@@ -36,9 +36,9 @@ function nextReleases() {
 
             $.each(movie, function () {
                 console.log(this);
-                output += `<div class="containerMovie m-3 d-flex flex-column justify-content-center align-items-center ">
-          <img src="https://image.tmdb.org/t/p/w500/${this.backdrop_path}" alt="" class="imgStyle">
-          <h5 class="nameMovie text-center">${this.title}</h5>
+                output += `<div class="containerMovie2 m-3 d-flex flex-column justify-content-center align-items-center">
+          <img src="https://image.tmdb.org/t/p/w500/${this.backdrop_path}" alt="" class="imgStyle2">
+          <h5 class="nameMovie text-center text-uppercase">${this.title}</h5>
         </div>
       `;
             })
