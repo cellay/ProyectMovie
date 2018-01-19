@@ -178,7 +178,7 @@ a:hover {
  }
 .hidenNow {
     /* esconder */
-    display: none;
+    display: none !important;
 }
 .showNow {
     /* mostrar */

@@ -43,4 +43,48 @@ $(document).ready(function() {
       console.log(error);
     });
   });
+  // Agregando funcionalidad a searchbar
+  $('#searchBtn').on('click', (e) => {
+
+    let searchText = $('#searchMovie').val();
+
+    getMovies(searchText);
+    e.preventDefault();
+  });
 });
+
+function getMovies(searchText) {
+  axios.get('http://www.omdbapi.com?s=' + searchText + '&apikey=3a181f1c')
+    .then((response) => {
+      console.log(response);
+      let movies = response.data.Search;
+      let output = '';
+      $.each(movies, (index, movie) => {
+        axios.get('http://www.omdbapi.com?t=' + movie.Title + '&apikey=3a181f1c')
+          .then((response) => {
+            let movieS = response.data;
+            console.log(movieS);
+            $genre = movieS.Genre.toString();
+            selector = 'Sci-Fi';
+            if ($genre.indexOf(selector) !== -1) {
+              output += `<div class="containerMovie m-3 d-flex flex-column justify-content-center align-items-center ">
+          <img src="${movieS.Poster}" alt="" class="imgStyle">
+          <h5 class="nameMovie text-center">${movieS.Title}</h5>
+          <a href="#"  class="btn btn-outline-warning bg-dark" id="btnSeeMore" onclick="infoMovie('${movieS.imdbID}')">See More</a>
+        </div>
+     /*  `; */
+            }
+            $('.hightLight').addClass('hidenNow');
+            $('#moviesBox').html(output);
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+        });
+      })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+});
+
